@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# IntelliJ project files
+.idea
+target
+*.yml
+*.iml
+out
+gen
+#eclipse
+.settings
+.classpath
+.project
