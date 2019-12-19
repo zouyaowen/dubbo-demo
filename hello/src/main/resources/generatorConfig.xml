@@ -1,0 +1,16 @@
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="simple" targetRuntime="MyBatis3Simple">
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/mark?useUnicode=true" jdbcPassword="123456" jdbcUserId="root">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.zou.demo.entity" targetProject="src/main/java"/>
+
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.zou.demo.mapper" targetProject="src/main/java"/>
+
+        <table tableName="mark_mark"/>
+    </context>
+</generatorConfiguration>
