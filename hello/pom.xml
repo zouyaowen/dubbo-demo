@@ -6,10 +6,25 @@
         <artifactId>dubbo-demo</artifactId>
         <groupId>com.zou.demo</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath/>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>hello</artifactId>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>com.zou.demo</groupId>
