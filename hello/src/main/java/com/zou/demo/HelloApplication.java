@@ -1,5 +1,7 @@
 package com.zou.demo;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.apache.dubbo.config.spring.context.annotation.EnableDubboConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Modifyed by:
  */
 @SpringBootApplication
+@EnableDubbo
 public class HelloApplication {
     public static void main(String[] args) {
         SpringApplication.run(HelloApplication.class, args);

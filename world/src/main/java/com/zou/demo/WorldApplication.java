@@ -1,5 +1,8 @@
 package com.zou.demo;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * @Author: zouyaowen
  * @Description:
@@ -9,6 +12,6 @@ package com.zou.demo;
 @SpringBootApplication
 public class WorldApplication {
     public static void main(String[] args) {
-        SpringApplication.r
+        SpringApplication.run(WorldApplication.class,args);
     }
 }
