@@ -19,7 +19,9 @@ public class SystemRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("--------before-----------");
         String hello = helloService.sayHello("邹耀文");
         System.out.println(hello);
+        System.out.println("---------after----------");
     }
 }
